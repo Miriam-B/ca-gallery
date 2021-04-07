@@ -2,7 +2,7 @@ var gProjs = [{
   "id": "ExPacman",
   "name": "Pacman",
   "title": "Eat the food and avoid your enemies",
-  "desc": "later",
+  "desc": "This game is just like the original pacman, the only",
   "url": "projs/ExPacman/index.html",
   "publishedAt": 1448693940000,
   "labels": ["Matrixes", "keyboard events"]
@@ -26,13 +26,53 @@ var gProjs = [{
   "labels": ["Matrixes", "keyboard events"]
 }];
 
+(function initModals() {
+  confirm
+  var html = '';
+  gProjs.forEach(project => {
+    html += `<div class="portfolio-modal modal fade" id="portfolioModal${project.id}" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2>${project.name}</h2>
+                <p class="item-intro text-muted">${project.title}</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/${project.id}.jpg" alt="no picture">
+                <p>${project.desc}</p>
+                <ul class="list-inline">
+                  <li>${new Date(project.publishedAt).toDateString()}</li>
+                  <li>Category: Game</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>`;
+    });
+
+  $('.modal-container').html(html);
+}) ();
+
 (function initPages() {
   var html = `<div class="row">`;
 
   gProjs.forEach(project => {
     html +=
       `<div class="col-md-4 col-sm-6 portfolio-item">
-      <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+      <a class="portfolio-link" data-toggle="modal" href="#portfolioModal${project.id}">
         <div class="portfolio-hover">
           <div class="portfolio-hover-content">
             <i class="fa fa-plus fa-3x"></i>
