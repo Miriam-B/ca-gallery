@@ -1,0 +1,42 @@
+body{
+    background-image: url(img/aU5VCZ.jpeg);
+}
+
+h1{
+    text-align: center;
+    color:whitesmoke;
+}
+
+h2{
+    text-align: center;
+    color: whitesmoke;
+}
+
+.game-container img{
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+    border-radius: 20%;
+}
+
+.btn-container{
+    margin-left: 45%;
+}
+
+button {
+    padding:25px;
+    cursor:pointer;
+    background-color: rgba(0, 0, 0, 0.507);
+    border-radius: 20%;
+    color:thistle
+}
+
+button:hover {
+    background-color: rgba(104, 131, 138, 0.349);
+}
+
+.msg{
+    color: whitesmoke;
+    font-size: 50px;
+    text-align: center;
+}
