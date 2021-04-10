@@ -1,0 +1,165 @@
+body {
+    background-image: url("/img/background.jpg");
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button {
+    border-radius: 5px;
+}
+
+button:hover {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+h1{
+    font-family: 'New Tegomin', serif;
+    font-size: 45px;
+    text-shadow: 0 0 7px #ffffffda;
+}
+
+.book-container {
+    margin: auto;
+    margin-top: 10vh;
+    padding: 10px;
+    width: 90vw;
+    box-shadow: 0 0 7px #00000073;
+    border-radius: 8px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    font-weight: 600;
+}
+
+.create-book-btn:hover {
+    background: linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+    background-color: #5cbf2a;
+}
+
+.create-book-btn:active {
+    position: relative;
+    top: 1px;
+}
+
+table {
+    margin-top: 10px;
+    flex-direction: column;
+    border-collapse: collapse;
+    box-shadow: 0 0 3px 0px #000000ad;
+}
+
+td {
+    width: 20vw;
+    border: 3px solid #ffffff7d;
+    height: 40px;
+}
+
+td:first-child {
+    width: 15vw;
+}
+
+td:last-child {
+    width: 35vw;
+}
+
+.id, .title, .price {
+    cursor: pointer;
+}
+
+button.read {
+    width: 65px;
+}
+
+button.update {
+    width: 65px;
+}
+
+button.delete {
+    width: 65px;
+}
+
+.page-select {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.page-select .current-page {
+    background-color: rgb(35, 187, 211);
+    color:white;
+    padding: 3px 8px;
+    border-radius: 3px;
+    box-shadow: 0 0 3px 0px #000000ad;
+    width: 40px;
+    font-weight: 600;
+}
+
+.page-select button {
+    width: 80px;
+    font-weight: 600;
+}
+
+.modal {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    text-align: left;
+    height: 750px;
+    position: absolute;
+    background-color:rgb(181, 205, 197);
+    border: 1px solid black;
+    width: 50vw;
+    top: 10vh;
+    left: 25vw;
+    gap: 5px;
+}
+
+h4 {
+    margin: 0%;
+}
+
+h4.rate {
+    display: flex;
+    gap: 10px;
+}
+
+.modal img {
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: 250px;
+}
+
+.modal .close {
+    width: 100px;
+    align-self: center;
+}
+
+.modal .rate-btn {
+    width: 25px;
+}
+
+.language {
+    position:fixed;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: rgba(41, 86, 92, 0.651);
+    width: 150px;
+    border-radius: 5px;
+    padding:5px;
+}
+
+body.rtl {
+    direction: rtl;
+}
+
+body.rtl .btn-delete {
+    float: left;
+} 

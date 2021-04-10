@@ -774,8 +774,9 @@ fieldset[disabled] .btn-xl:hover {
 
 .game-pic {
     height: 350px;
-    width:350px;
-    object-fit: fill;
+    width: 350px;
+    object-fit: cover;
+    object-position: top;
 }
 
 #message {

@@ -24,7 +24,17 @@ var gProjs = [{
   "url": "projs/ExInPicture/index.html",
   "publishedAt": 1448693940000,
   "labels": ["Matrixes", "keyboard events"]
-}];
+},
+{
+  "id": "ExBookShop",
+  "name": "Book Shop",
+  "title": "An admin page for managing a book shop",
+  "desc": "Manage the books that you sell.",
+  "url": "projs/ExBookShop/index.html",
+  "publishedAt": 1448693940000,
+  "labels": ["Matrixes", "keyboard events"]
+}
+];
 
 (function initModals() {
   confirm

@@ -12,3 +12,4 @@ After downloading, simply edit the HTML, CSS and JS files included with the temp
 ## Copyright and License
 
 Code released under the [MIT] license.
+.
