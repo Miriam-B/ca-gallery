@@ -782,3 +782,7 @@ fieldset[disabled] .btn-xl:hover {
 #message {
     height: 200px;
 }
+
+textarea {
+    resize: none;
+}
