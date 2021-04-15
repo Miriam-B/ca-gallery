@@ -33,11 +33,19 @@ var gProjs = [{
   "url": "projs/ExBookShop/index.html",
   "publishedAt": 1448693940000,
   "labels": ["Matrixes", "keyboard events"]
+},
+{
+  "id": "ExTouchNums",
+  "name": "Touch the nums",
+  "title": "Touch the numbers by order",
+  "desc": "Touch the nums from the first number to the last",
+  "url": "projs/ExTouchNums/index.html",
+  "publishedAt": 1448693940000,
+  "labels": ["Matrixes", "keyboard events"]
 }
 ];
 
 (function initModals() {
-  confirm
   var html = '';
   gProjs.forEach(project => {
     html += `<div class="portfolio-modal modal fade" id="portfolioModal${project.id}" tabindex="-1" role="dialog" aria-hidden="true">
